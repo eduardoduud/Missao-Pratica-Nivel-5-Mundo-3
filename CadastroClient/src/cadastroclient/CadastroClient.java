@@ -11,6 +11,8 @@ public class CadastroClient {
             ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream());
             ObjectInputStream in = new ObjectInputStream(socket.getInputStream())
         ) {
+            System.out.println("Usuario conectado");
+            
             out.writeObject("op1");
             out.writeObject("op1");
 
